@@ -86,12 +86,30 @@ header {
     height: 40px;
     width: 40px;
     justify-content: space-between;
-    transition: transform 0.3s ease;
     
 }
 
-.user-profile img:hover {
-    transform: scale(1.2);
+.user-profile-notification {
+    position: relative;
+}
+
+.user-profile-notification::after {
+    content: "5";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+    padding: 2px;
+    box-sizing: border-box;
 }
 
 main {
