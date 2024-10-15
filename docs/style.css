@@ -120,6 +120,23 @@ main {
     transform: translateY(-5px);
 }
 
+.video-duration {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 2px 5px;
+    font-size: 12px;
+    border-radius: 4px;
+    font-weight: bold;
+    z-index: 1;
+}
+
+.thumbnail {
+    position: relative;
+}
+
 .thumbnail img {
     width: 100%;
     height: auto;
