@@ -64,6 +64,7 @@ header {
     border-radius: 50%;
     height: 40px;
     width: 40px;
+    justify-content: space-between;
 }
 
 main {
@@ -143,6 +144,6 @@ main {
     }
 
     .video-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1r;
     }
 }
