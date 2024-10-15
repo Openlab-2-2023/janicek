@@ -1,9 +1,10 @@
 body {
     color: rgb(0, 0, 0);
     background-color: #000000;
-background-image: url("https://sportky.zoznam.sk/cacheImg/obr/600px/lionel-messi-fc-barcelona-370493.jpg");
-background-attachment: fixed;
-background-size: cover;
+    background-image: url("https://sportky.zoznam.sk/cacheImg/obr/600px/lionel-messi-fc-barcelona-370493.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    padding-top: 60px;
     
 }
 
