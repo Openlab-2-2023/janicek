@@ -138,12 +138,51 @@ main {
     color: #909090;
 }
 
+.sidebar {
+    width: 140px;
+    background-color: #ffffff;
+    position: fixed;
+    top: 60px;
+    bottom: 0;
+    left: 0;
+    overflow-y: auto;
+    padding-top: 20px;
+    border-right: 1px solid #e5e5e5;
+    text-align: center;
+}
+
+.sidebar nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar nav ul li {
+    margin-bottom: 20px;
+}
+
+.sidebar nav ul li a img {
+    width: 30px;
+    height: 30px;
+    display: block;
+    margin: 0 auto;
+    transition: transform 0.3s ease;
+}
+
+.sidebar nav ul li a:hover img {
+    transform: scale(1.2);
+}
+
 @media screen and (max-width: 768px) {
+    .sidebar {
+        width: 50px;
+    }
+
     .search-bar input {
         width: 250px;
     }
 
     .video-grid {
-        grid-template-columns: 1r;
+        grid-template-columns: 1fr;
     }
 }
