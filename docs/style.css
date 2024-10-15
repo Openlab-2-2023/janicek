@@ -1,82 +1,233 @@
 body {
-    color: rgb(0, 0, 0);
-    background-color: #000000;
-    background-image: url("https://sportky.zoznam.sk/cacheImg/obr/600px/lionel-messi-fc-barcelona-370493.jpg");
-    background-attachment: fixed;
-    background-size: cover;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    height: 50000px;
+    padding-top: 60px;
+}
+
+header {
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    background-color: #fff;
+    border-bottom: 1px solid #e5e5e5;
+    padding: 10px 20px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.guide-button {
+    margin-right: 20px;
+}
+
+.guide-button img {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.guide-button img:hover {
+    transform: scale(1.2);
+}
+
+.logo img {
+    height: 50px;
+    transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+    transform: scale(1.2);
+}
+
+
+.search-bar {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-bar input {
+    width: 400px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.search-bar button {
+    padding: 10px 15px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #ff0000;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-bar button:hover {
+    background-color: #d70000;
+}
+
+.user-profile img {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    justify-content: space-between;
+    transition: transform 0.3s ease;
     
 }
 
-.img1 img {
-    float: left; 
-    height: 650px;
-    width: 500px;
-    margin-left: 200px;
-    border-radius: 16px;  
-    
+.user-profile img:hover {
+    transform: scale(1.2);
 }
 
-.basic-info {
-    display: grid;       
-    padding: 20px;                
-    border: 2px;      
-    border-radius: 10px;   
-    background: linear-gradient(to right, rgb(255, 0, 0), #440381, hsl(0, 0%, 62%));          
-    max-width: 500px;   
-    font-size: 10px;           
-    font-family: Arial, sans-serif; 
-    text-align: left;   
-    font-weight: 100;
-    margin-top: 250px;
-    font-weight: bold;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin-left: -100px;
-
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
 }
 
-.bio {
-    display: inline-block;        
-    padding: 20px;                
-    border: 2px;               
-    max-width: 1250px;    
-    font-size: 20px;   
-    border-radius: 10px;  
-    background: linear-gradient(to right, rgb(255, 0, 0), #440381, hsl(0, 0%, 62%));          
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-align: left;   
-    font-weight: bold;
-    margin-left: 100px;  
-    margin-bottom: 100px  
-         
-
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 20px;
 }
 
-  .title2 {
-    color: #3700ff;
-    text-align: center;
-    font-size: 30px;
-    margin-top: 100px;
-    margin-bottom: 50px;
-    font-weight: bold;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+.video-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
 }
 
-  .title {
- 
-    color: #000000;
-    text-align: center;
-    font-size: 30px;
+.video-container:hover {
+    transform: translateY(-5px);
+}
+
+.video-duration {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 2px 5px;
+    font-size: 12px;
+    border-radius: 4px;
     font-weight: bold;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;    
+    z-index: 1;
+}
 
-  }
+.thumbnail {
+    position: relative;
+}
 
-  .img2 img {
-    float: right; 
-    height: 540px;
-    width: 960px;
+.thumbnail img {
+    width: 100%;
+    height: auto;
+}
+
+.video-details {
+    display: flex;
+    padding: 10px;
+}
+
+.profile-picture img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
     margin-right: 10px;
-    margin-top: 100px;
-    margin-bottom: 100px;
-    border-radius: 16px;  
-  }
+}
+
+.video-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.video-title {
+    font-weight: bold;
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.video-meta {
+    font-size: 14px;
+    color: #606060;
+}
+
+.author-name {
+    font-weight: 600;
+    color: #000;
+}
+
+.views {
+    margin-left: 5px;
+    color: #909090;
+}
+
+.sidebar {
+    width: 100px;
+    background-color: #ffffff;
+    position: fixed;
+    top: 75px;
+    bottom: 0;
+    z-index: 2;
+    left: 0;
+    overflow-y: auto;
+    padding-top: 20px;
+    border-right: 1px solid #e5e5e5;
+    text-align: center;
+}
+
+.sidebar nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar nav ul li {
+    margin-bottom: 20px;
+}
+
+.sidebar nav ul li a img {
+    width: 30px;
+    height: 30px;
+    display: block;
+    margin: 0 auto;
+    transition: transform 0.3s ease;
+}
+
+.sidebar nav ul li a:hover img {
+    transform: scale(1.2);
+}
+
+@media screen and (max-width: 768px) {
+    .sidebar {
+        width: 50px;
+    }
+
+    .search-bar input {
+        width: 250px;
+    }
+
+    .video-grid {
+        grid-template-columns: 1fr;
+    }
+}
