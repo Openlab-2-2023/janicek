@@ -4,23 +4,28 @@ body {
     margin: 0;
     padding: 20px;
 }
+
 h1 {
     text-align: center;
     color: #333;
 }
+
 table {
     width: 50%;
     margin: 0 auto;
     border-collapse: collapse;
 }
+
 table, th, td {
     border: 1px solid black;
 }
+
 th, td {
     padding: 10px;
     text-align: center;
     height: 40px;
 }
+
 th {
     background-color: #e0e0e0;
     color: black;
